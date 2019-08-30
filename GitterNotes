@@ -1,0 +1,9 @@
++ Applying LDA to posts containing URLs does not seem sensible because:
+- posts sometimes only contain URL without accompanying text.
+- the post is not self-explanatory in itself because it just one message from 
+an ongoing chat so all posts that are part of the chat have to considered to
+derive a meaningful topic.
+
+
++ I have to see what Github contributors talk about in Gitter chats.
+- probably author topic models can help here.
