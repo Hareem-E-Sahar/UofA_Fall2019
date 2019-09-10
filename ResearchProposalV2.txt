@@ -1,0 +1,33 @@
+﻿Resarch in the area concerning the philosophical, technical, or theoretical aspects of processes, systems or techniques for human communications?
+
+Motivation:
+What role the internet plays in human communication?
+In the digitized world of today, mobile phones and internet plays the most vital role in human communication. People are engaged in live conversations, instant messaging, emails, live visual discussions, online meetings and VoIP communications.
+
+    • Role of protocols in the internet? 
+These applications of modern day rely on several internet protocols such as HTTP, SMTP and VoIP for their success. The performance and efficiency of these protocols is highly important in order to ensure a greater communication experience. Therefore protocols keep on evolving, e.g. recently HTTP/2 was proposed because it is expected to reduce page load time. Research has been done on assessing the performance of HTTP protocol. Following those, in this work, I will explore one specific dimension of performance of protocols which is the energy consumption i.e., how different protocols affect the energy consumption of applications. 
+
+    • Energy efficiency of these protocols. 
+      Energy consumption is important because most of the communication today is over the battery constrained devices such as smartphones, which induced a 70% increase in worldwide mobile data traffic in 2014 [1]. Accessing the internet is one of the most energy draining operations on a smartphone and hence has to be optimized by employing energy-efficient protocols.  Not only this, the server side energy consumption is also affected by protocols and it cannot be ignored either because data centers are responsible for consuming one percent of the world’s energy [2]. In 2010, 4.3 terawatt-years of energy was consumed within the US by LAN switches and routers [3]. Another very important aspect of energy consumption is the environment: energy consumption has a detrimental effect on climate change. Reportedly, 1000 tonnes of CO2 is produced every year by the computer energy consumption of mid-sized organizations [4].
+
+Overview: This work is a first step towards our long term goal of minimizing the resource usage of various internet protocols. Primarily, I am interested in analysing and subsequently reducing the energy consumption of protocols like HTTP, SMTP and VoIP which facilitate communications over the internet. In the initial phase, I will be studying HTTP/2 and HTTP/3 which are the future of the web [5] and are designed to overcome the limitations of their predecessor, HTTP, in terms of resource usage and end-user latency [6]. However, additional questions that still require investigation are, how these protocols affect energy consumption of applications? Will using HTTP/2 or HTTP/3 instead of HTTP help save energy? Work along these lines has been done by [7] and [8] but my goal is to analyse and compare the client-side energy efficiency of HTTP/2 and HTTP/3 which is not done in prior works. The results of this study will allow us to guide developers on whether or not they should switch to newer protocols which claim to be more efficient for developing applications.
+
+Methodology:
+Our objective is to compare the energy consumption of HTTP/2 and HTTP/3 protocol in real world settings. In order to carry out this task, we will select several client side applications such as web browsers with support for both HTTP/2 and HTTP/3. We then formulate test cases that emulate the real world usage behavior of these applications e.g. chatting on Google Hangouts. Finally we execute the tests for both protocols and measure the energy consumed with the help of precise energy measurement tools like Green Miner [9]. The collected data will then be statistically analysed to infer how HTTP/2 compares to HTTP/3 in terms of energy consumption. Our results can be helpful for developers wishing to make an appropriate choice of protocol to be used for applications supporting communication and coordination among people. Furthermore, the research methodology can be employed for comparing any internet protocol in future.
+
+
+[1] Cisco Visual Networking Index: Global Mobile Data Traffic ForecastUpdate, 2014-2019. Technical report, February 2015.
+
+[2] H. Brotherton.Data center energy efficiency. PhD thesis, PurdueUniversity, May 2014
+
+[3] A.-C. Orgerie, M. D. d. Assuncao, and L. Lefevre. A Survey on Tech-niques for Improving the Energy Efficiency of Large-scale DistributedSystems.ACM Comput. Surv., 46(4):47:1–47:31, March 2014.
+
+[4] A. Hindle. Green Mining: Investigating Power Consumption Across Versions. InProceedings of the 34th International Conference onSoftware Engineering, ICSE ’12, pages 1301–1304, Zurich, Switzerland,June 2012.
+
+[5] Akamai. HTTP/2 is the future of the Web, and it is already here! http://http2.akamai.com/demo/. (last accessed: 2015-APR-22).
+[6] I. H. W. Group. Http/2. https://http2.github.io/. (last accessed: 2015-APR-22)
+
+[7] D. Li and W. G. J. Halfond. Optimizing energy of http requests inandroid applications. InProceedings of the 3rd International Workshopon Software Development Lifecycle for Mobile, DeMobile 2015, pages25–28, New York, NY, USA, 2015. ACM.
+[8] S. Chowdhury, S. Varun, and A. Hindle. Client-sideEnergy Efficiency of HTTP/2 for Web and Mobile AppDevelopers. In SANER ’16, Osaka, Japan,March 2016.
+
+[9] A. Hindle, A. Wilson, K. Rasmussen, E. J. Barlow, J. C. Campbell,and S. Romansky. GreenMiner: A Hardware Based Mining SoftwareRepositories Software Energy Consumption Framework. InProceedingsof the 11th Working Conference on Mining Software Repositories, MSR2014, pages 12–21, Hyderabad, India, May 2014
